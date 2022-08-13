@@ -1,19 +1,16 @@
 ---
-import type {
-  FrontmatterPage,
-  IFrontmatter,
-} from 'astro-boilerplate-components';
+import { CTA } from '@/partials/CTA';
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import { sortByDate } from '@/utils/Posts';
+
+import type { FrontmatterPage, IFrontmatter } from '../components';
 import {
   BlogGallery,
   NewerOlderPagination,
   PaginationHeader,
   Section,
-} from 'astro-boilerplate-components';
-
-import { CTA } from '@/partials/CTA';
-import Base from '@/templates/Base.astro';
-import { AppConfig } from '@/utils/AppConfig';
-import { sortByDate } from '@/utils/Posts';
+} from '../components';
 
 type GetStaticPaths = {
   paginate: any;

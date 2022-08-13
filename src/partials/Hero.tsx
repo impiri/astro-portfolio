@@ -1,16 +1,11 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { GradientText, HeroAvatar, HeroSocial, Section } from '../components';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi. I'm <GradientText>Greg Gossett</GradientText>.
         </>
       }
       description={
@@ -29,7 +24,7 @@ const Hero = () => (
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          src="/assets/images/avataaars.svg"
           alt="Avatar image"
           loading="lazy"
         />
